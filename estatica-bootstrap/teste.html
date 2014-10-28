@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").load("dados_externos.txt");
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div id="div1"><h2>O jQuery AJAX mudará esse texto se você clicar: </h2></div>
+<button>Obter dados</button>
+
+</body>
+
+</html>
+
+</html>

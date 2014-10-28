@@ -1,0 +1,35 @@
+body {
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1 {
+    border-bottom: 2px solid #325D77;
+    color: #325D77
+}
+
+p {
+    text-align: justify;
+}
+
+body {
+    background-color: #F9F9FA;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+
+#cadastrar {
+    border-top: 2px solid #325D77;
+    margin: 30px 0;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#logo{
+    float: left;
+    text-align: left;
+    margin-left: -70px;
+    height: 265px;
+
+}
