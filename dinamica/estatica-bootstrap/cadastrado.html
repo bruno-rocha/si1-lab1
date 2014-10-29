@@ -2,21 +2,22 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Agradecimento</title>
+    <title>Cadastrado</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/obrigado.css">
+    <link rel="stylesheet" href="css/cadastrado.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript"  src="script.js"></script>
 </head>
 <body>
-<div id="sucess" class="hero-unit">
-    <div class="page-header">
-        <div class="alert alert-success">
-            <p>Parabéns! Você agora é um aluno de SI1.</p>
-        </div>
-    </div>
+<div id="sucess" class="alert alert-success alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert"
+            aria-hidden="true">
+        &times;
+    </button>
+    <p>Parabéns! Você agora é um aluno de SI1.</p>
 </div>
+
 
 <h3>Diga-nos que assuntos gostaria de aprender, ou já aprendeu:</h3>
 
@@ -25,6 +26,7 @@
          <input type="text" name="assunto" value="" />
          <button type="button" class="btn-add">Adicionar</button>
     </form>
+    <br>
 </div>
 <br>
 
@@ -50,5 +52,11 @@
         </div>
     </div>
 </div>
+
+<p id="home">
+    <a class="btn btn-primary btn-large" href="index.html">
+        Retorne a página inicial
+    </a>
+</p>
 </body>
 </html>

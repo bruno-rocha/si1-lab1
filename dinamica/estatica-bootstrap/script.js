@@ -10,8 +10,29 @@ $(document).ready(function(){
         }
     });
 
-    $(".btn-success").click(function(){
-        $( ".lista-aprendido" ).prepend("<li class=\"list-group-item ng-binding ng-scope\">"+ assunto + "</span></li>");
+    $(".lista-aprender").on("click", ".btn-success", function() {
+        var parent = $(this).parent().parent();
+        var text = parent.text();
+        parent.remove();
+        $(".lista-aprendido").append("<li class=\"list-group-item ng-binding ng-scope\">"+ text+
+            "<span class=\"pull-right\">" +
+            "<button class=\"btn btn-xs btn-danger\"> <span class=\"glyphicon glyphicon-trash\"></span></button>" +
+            "</span></li>");
     });
 
+    $(".lista-aprender").on("click", ".btn-danger", function() {
+        var parent = $(this).parent().parent();
+        parent.remove();
+    });
+
+    $(".lista-aprendido").on("click", ".btn-danger", function() {
+        var parent = $(this).parent().parent();
+        parent.remove();
+    });
+
+    $(function(){
+        $(".close").click(function(){
+            $("#sucess").alert();
+        });
+    });
 });
