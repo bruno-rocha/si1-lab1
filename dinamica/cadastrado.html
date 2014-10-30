@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Cadastrado</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/cadastrado.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript"  src="script.js"></script>
+</head>
+<body>
+
+<div id="sucess" class="page-header">
+    <div class="alert alert-success"><strong>Parabéns!</strong> Você agora é um aluno de SI1.</div>
+</div>
+
+<h3>Diga-nos que assuntos gostaria de aprender, ou já aprendeu:</h3>
+
+<div id="add" class="col-md-6 col-md-offset-3" style="text-align:center">
+    <form action="" method="post">
+         <input type="text" name="assunto" value="" />
+         <button type="button" class="btn-add">Adicionar</button>
+    </form>
+    <br>
+</div>
+<br>
+
+<div class="row">
+    <br>
+    <br>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h4 class="panel-title">Assuntos a aprender</h4></div>
+            <div class="panel-body">
+                <ul class="lista-aprender" id="aprender">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h4 class="panel-title">Assuntos Aprendidos</h4></div>
+            <div class="panel-body">
+                <ul class="lista-aprendido" id="aprendido">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p id="home">
+    <a class="btn btn-primary btn-large" href="index.html">
+        Retorne a página inicial
+    </a>
+</p>
+</body>
+</html>
