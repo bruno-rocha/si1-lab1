@@ -29,10 +29,4 @@ $(document).ready(function(){
         var parent = $(this).parent().parent();
         parent.remove();
     });
-
-    $(function(){
-        $(".close").click(function(){
-            $("#sucess").alert();
-        });
-    });
 });
